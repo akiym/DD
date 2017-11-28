@@ -1,10 +1,11 @@
 # NAME
 
-DD - It's new $module
+DD - My own Data::Printer
 
 # SYNOPSIS
 
-    use DD;
+    use DD ''; p($stuff);
+    use DD '8d'; p($stuff);
 
 # DESCRIPTION
 

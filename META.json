@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "My own Data::Printer",
    "author" : [
       "Takumi Akiyama <t.akiym@gmail.com>"
    ],
@@ -42,6 +42,7 @@
       },
       "runtime" : {
          "requires" : {
+            "Data::Printer" : "0",
             "perl" : "5.008001"
          }
       },
@@ -52,6 +53,17 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/akiym/DD/issues"
+      },
+      "homepage" : "https://github.com/akiym/DD",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/akiym/DD.git",
+         "web" : "https://github.com/akiym/DD"
+      }
+   },
    "version" : "0.01",
    "x_authority" : "cpan:AKIYM",
    "x_serialization_backend" : "JSON::PP version 2.27300"
