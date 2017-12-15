@@ -49,6 +49,7 @@ sub p {
 
 {
     package Data::Printer;
+    use Package::Stash;
 
     sub __class {
         my ($item, $p) = @_;
