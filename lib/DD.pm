@@ -13,7 +13,8 @@ sub import {
     $s //= '';
 
     my ($depth) = $s =~ /(\d+)/;
-    my ($deparse) = $s =~ /(d)/;
+    my $deparse = $s =~ /d/;
+    my $show_methods = $s =~ /m/;
 
     Data::Printer->import(
         alias          => '_p',
@@ -23,7 +24,7 @@ sub import {
         hash_separator => ' ',
         class          => {
             expand       => $depth // 2,
-            show_methods => 'none',
+            show_methods => $show_methods ? 'all' : 'none',
             parents      => 0,
             liner_isa    => 'none',
         },
