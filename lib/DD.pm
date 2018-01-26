@@ -29,7 +29,8 @@ sub import {
             liner_isa    => 'none',
         },
         filters => {
-            -class => [\&Data::Printer::__class],
+            -class    => [\&Data::Printer::__class],
+            -external => ['TengRow'],
         },
     );
 
